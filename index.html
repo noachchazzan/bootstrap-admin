@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { 
+            background-color: grey !important; 
+        }
+        h1 { 
+            font-size: 1.5em; 
+            font-weight: strong; 
+            color: wheat; 
+            text-align: center; 
+            text-decoration: wavy;
+            width: auto; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        /*div {
+            
+            width: 100vh;
+            height: 100vb;
+            padding: 2px solid green;
+            margin: 2px solid green;
+            border: 2px solid green;
+        }*/
+        p {
+            color: black;
+            align-self: center;
+            margin: 2px solid green;
+            padding: 2px solid green;
+            border: 2px solid green;
+            width: auto;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            align-items: center; /* Vertical alignment of child elements */
+            justify-content: space-between; /* Horizontal alignment of child elements */
+            flex-wrap: wrap;
+            
+        }
+        .container div {
+            padding: 2px;
+            margin: 2px; 
+            border: 2px solid green;
+        }
+        .container div img {
+            width: 250px;
+            height: 250px;
+        }
+        .items {
+            flex: 1;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="admin.html" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-1">Financials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-2">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-3.html">Other</a>
+                    </li>
+                </ul>
+
+                <!-- Search bar in the middle -->
+                <form class="d-flex me-auto mb-2 mb-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+
+                <!-- User details on the far right -->
+                <div class="d-flex align-items-center">
+                    <img src="/images/1980818558-square.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                    <div>
+                        <span class="text-light">Username</span><br>
+                        <small class="text-muted">Provider</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Welcome to InstiBanc</h1>
+    <p>
+        InstiBanc is your one stop app to get your buisness and personal  financial transactions processed, secured, confirmed, 
+        and semi-documented all within a predefined "radius" or proximity defined by the user. With "I-B" YOU can meet people in real 
+        life for services, "jobs", points-of-transactions and other things pre-defined by the user. This is all done discretely 
+        and out of the scope of traditional financial systems so you are safe and free from scammers in the REAL WORLD. I emphasis real world because in today's 
+        high tech driven society preforming finacial transactions have become more eaiser and so did the potential for 'error' which we define as 
+        unwarranted or unwanted results. Privacy and the mimicking of real world transactions via a electronic medium is our goal. Consider this app akin to real cash. </p>
+    </p>
+    <div class="container">
+        <div class="items-1 items">
+            <h2>Proximity Transactor</h2>
+            <p>Bring authenticity to online transactions. With InstiBanc's Proximity Transactor, ensure that both parties are physically present. It's not just about transferring funds; it's about building trust in every transaction. Whether you're paying rent or purchasing a product, proximity matters.</p>
+            <img src="images\th.jpg">
+        </div>
+        <div class="items-2 items">
+            <h2>Ultimate Discretion</h2>
+            <p>Your financial activities are your business. At InstiBanc, we prioritize your privacy. Our Ultimate Discretion feature ensures your transactions remain confidential, blending the convenience of online payments with the privacy of cash.</p>
+            <img src="images\Computer-security-illustration-vector.jpg">
+        </div>
+
+        <div class="items-3 items">
+            <h2>Crypto Ready</h2>
+            <p>"Step into the future of transactions. With InstiBanc, you're not just limited to traditional currencies. Dive into the world of cryptocurrency and make secure, efficient trades with the same ease as any other transaction. Ready to embrace the future? We are.</p>
+            <img src="images\download.jpg">
+        </div>
+        <div class="items-4 items">
+            <h2>Secure and Safe</h2>
+            <p>Rest easy with InstiBanc's robust security protocols. Beyond just a transaction platform, we're a shield that protects your finances from potential threats. Every transaction, every exchange, every moment — we've got your back.</p>
+            <img src="images\PhotoGrid_1623421748548-scaled.jpg">
+        </div>
+        <div class="items-5 items">
+            <h3>Reliablea OR JUST LIKE CASH</h3>
+            <p>Ever missed the tangibility of cash in online transactions? With InstiBanc, experience the reliability and authenticity of cash payments in a modern, digitized form. It's more than just an app; it's a revolution in online payments.</p>
+            <img src="images\istockphoto-1185296321-1024x1024.jpg">
+        </div>
+    </div>
+        <a href="page-1.html" style="align-self: center;">Click here to obtain</a>
+
+        <footer style="background-color: #2c3e50; color: white; padding: 20px 0; text-align: center;">
+            <p>&copy; 2023 InstiBanc. All Rights Reserved.</p>
+            <p><a href="#" style="color: white; text-decoration: none; margin-right: 15px;">Terms of Service</a> | <a href="#" style="color: white; text-decoration: none; margin-left: 15px;">Privacy Policy</a></p>
+        </footer>
+    </body>
+    </html>
+    <img src="1980818558-square.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+
+</body>
+</html>
